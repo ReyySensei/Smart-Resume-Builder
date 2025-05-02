@@ -231,7 +231,7 @@ a{
     align-items: center;
 }
 .section-one-l img{
-    max-width: 545px;
+    max-width: 500px;
     margin-right: auto;
     margin-left: auto;
     border-radius: 10px;
@@ -466,12 +466,10 @@ textarea{
 }
 .preview-blk .preview-item:nth-child(4) {
     margin-top: 20px;
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
 }
 #skills_dsp{
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
 }
 .preview-blk-title h3{
     text-transform: uppercase;
@@ -638,9 +636,7 @@ option[data-icon] {
 .form-control:focus {
     outline: none;
     border-color: #007bff;
-    /* Blue color for focus */
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    /* Blue glow on focus */
 }
 
 .template-box {
