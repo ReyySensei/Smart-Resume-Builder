@@ -225,3 +225,4 @@ function previewImage(){
 function printCV(){
     window.print();
 }
+

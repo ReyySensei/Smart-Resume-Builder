@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Page</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/images/weblogo.jpg" type="image/jpg">
 </head>
 <body>
     <nav class="navbar bg-white">
@@ -12,9 +13,9 @@
             <div class="navbar-container">
                 <div class="brand-and-toggler">
                     <a href="index.html" class="navbar-brand">
-                        <img src="assets/images/curriculum-vitae.png" alt="" class="navbar-brand-icon">
-                        <span class="navbar-brand-text">build</span>
-                        <span>resume.</span>
+                        <img src="assets/images/logouna.jpg" alt="" class="navbar-brand-icon">
+                        <span class="navbar-brand-text">SmartResume</span>
+                        <span>Builder.</span>
                     </a>
                     
                 </div>
@@ -22,7 +23,32 @@
         </div>
     </nav>
 
-    
+    <div class="form-elem template-selector">
+        <div class="template-box">
+            <div class="template-box-header">              
+                <h4>Select Your Resume Template</h4>
+            </div>
+            <p class="template-subtext">Choose a style that matches your industry or personal flair.</p>
+            <select id="templateSelect" class="form-control template-dropdown" onchange="redirectToTemplate(this.value)">
+                <option value="">Default</option>
+                <option value="culinary">🍳 Culinary</option>
+                <option value="tech">💻 Tech</option>
+                <option value="education">📚 Education</option>
+                <option value="design">🎨 Design</option>
+                <option value="business">💼 Business</option>
+                <option value="creative">🖌️ Creative</option>
+                <option value="medical">⚕️ Medical</option>
+                <option value="engineering">🛠️ Engineering</option>
+                <option value="legal">⚖️ Legal</option>
+                <option value="marketing">📈 Marketing</option>
+                <option value="freelance">🌐 Freelance</option>
+                <option value="hospitality">🏨 Hospitality</option>
+                <option value="seafarer">🚢 Seafarer</option>
+                <option value="police">👮 Police</option>
+            </select>
+        </div>
+    </div>
+
 
     <section id = "about-sc" class = "">
         <div class = "container">
@@ -325,7 +351,7 @@
                             <h3>skills</h3>
                         </div>
                         <div class = "skills-items preview-blk-list" id = "skills_dsp">
-                            <!-- skills list here -->
+                            
                         </div>
                     </div>
                 </div>
@@ -368,7 +394,6 @@
             <button type = "button" class = "print-btn btn btn-primary" onclick="printCV()">Print CV</button>
         </div>
     </section>
-
 
 
     <!-- jquery cdn -->

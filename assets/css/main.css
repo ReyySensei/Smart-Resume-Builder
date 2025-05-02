@@ -162,6 +162,7 @@ a{
     display: flex;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 8px;
+    background-color: var(--clr-black);
 }
 
 .navbar .container{
@@ -175,16 +176,17 @@ a{
     font-size: 1.8rem;
 }
 .navbar-brand-text{
-    color: var(--clr-dark);
+    color: var(--clr-blue);
     font-weight: 600;
 }
 .navbar-brand-text span{
-    color: var(--clr-blue);
-}
+    color: var(--clr-blue-dark);
+}    
 .navbar-brand-icon{
     width: 25px;
     margin-right: 6px;
     opacity: 0.8;
+    border-radius: 4px;
 }
 .brand-and-toggler{
     display: flex;
@@ -232,6 +234,7 @@ a{
     max-width: 545px;
     margin-right: auto;
     margin-left: auto;
+    border-radius: 10px;
 }
 .section-one-r{
     margin-top: 4rem;
@@ -271,6 +274,7 @@ a{
     width: 80px;
     margin-right: auto;
     margin-left: auto;
+    border-radius: 10px;
 }
 .section-two .section-item-title{
     color: var(--clr-blue-dark);
@@ -460,6 +464,15 @@ textarea{
     padding: 1rem 0;
     margin-bottom: 1rem;
 }
+.preview-blk .preview-item:nth-child(4) {
+    margin-top: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#skills_dsp{
+    text-align: justify;
+    text-justify: inter-word;
+}
 .preview-blk-title h3{
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -569,4 +582,335 @@ textarea{
         top: 0;
         overflow: hidden;
     }
+}
+/* General Styling for the Form */
+/* General Styling for the Form */
+.cv-form-blk {
+    margin-bottom: 20px;
+}
+
+/* Title of the Section */
+.cv-form-row-title h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Form Element Container */
+.form-elem {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styling */
+.form-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* Dropdown (Select) Styling */
+.form-control {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+/* Select option text styling */
+option {
+    padding-left: 30px;
+    position: relative;
+}
+
+/* Image style for the options */
+option[data-icon] {
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 5px center;
+}
+
+/* Focused state for the select */
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    /* Blue color for focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Blue glow on focus */
+}
+
+.template-box {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 500px;
+    margin: 2rem auto -8rem auto;
+    transition: transform 0.3s ease;
+}
+
+.template-box:hover {
+    transform: translateY(-5px);
+}
+
+.template-box-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.template-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.template-subtext {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 1.2rem;
+}
+
+.template-dropdown {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* === Resume Template Themes === */
+body[data-template="culinary"] .preview-cnt {
+    font-family: 'Georgia', serif;
+    background-color: #fffaf0;
+}
+
+body[data-template="culinary"] .preview-cnt-l {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/1b/2d/8f/1b2d8f56fcc190387875c2a9108ff331.jpg);
+    color: white;
+    background-size: cover;
+}
+
+body[data-template="culinary"] .preview-cnt-r h3 {
+    color: #8b4513;
+}
+
+/* Tech Template */
+body[data-template="tech"] .preview-cnt {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaf3fa;
+}
+
+body[data-template="tech"] .preview-cnt-l {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/fe/a1/5c/fea15cb6b03b31e8425ee2b2e9c883d7.jpg);
+    color: white;
+    background-size: cover;
+}
+
+body[data-template="tech"] .preview-cnt-r h3 {
+    color: #1a1c6a;
+}
+
+/* Education Template */
+body[data-template="education"] .preview-cnt {
+    font-family: 'Merriweather', serif;
+    background-color: #f0f4f8;
+}
+
+body[data-template="education"] .preview-cnt-l {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/f8/27/ae/f827ae3500b3ae4868bad3005d16a6d5.jpg);
+    color: white;
+    background-size: cover;
+}
+
+body[data-template="education"] .preview-cnt-r h3 {
+    color: #2f4f4f;
+}
+
+/* Design Template */
+body[data-template="design"] .preview-cnt {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #fceabb, #f8b500);
+    color: #333;
+}
+
+body[data-template="design"] .preview-cnt-l {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/1b/9e/78/1b9e78f1ed137bbc098ca795249437ef.jpg);
+    color: white;
+    background-size: cover;
+}
+
+body[data-template="design"] .preview-cnt-r h3 {
+    color: #111;
+}
+
+/* Creative Template */
+body[data-template="creative"] .preview-cnt {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+}
+
+body[data-template="creative"] .preview-cnt-l {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/43/01/78/430178eb0349bd13f9f706bf5e3a082c.jpg);
+    color: white;
+    background-size: cover;
+}
+body[data-template="creative"] .preview-cnt-r h3 {
+    color: #880e4f;
+}
+
+/* Business Template */
+body[data-template="business"] .preview-cnt {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+}
+
+body[data-template="business"] .preview-cnt-l {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/e3/8d/e9/e38de9a49a8d4cb05262f5c59a2c05c4.jpg);
+    color: white;
+    background-size: cover;
+}
+
+body[data-template="business"] .preview-cnt-r h3 {
+    color: #1a252f;
+}
+
+/* Medical Template */
+body[data-template="medical"] .preview-cnt {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e6f7ff;
+}
+
+body[data-template="medical"] .preview-cnt-l {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/7a/88/56/7a885696bd5862b1c3dbcdcb8ddf43d8.jpg);
+    color: white;
+    background-size: cover;
+}
+
+body[data-template="medical"] .preview-cnt-r h3 {
+    color: #005073;
+}
+
+/* Engineering Template */
+body[data-template="engineering"] .preview-cnt {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #f5f5f5;
+}
+
+body[data-template="engineering"] .preview-cnt-l {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/9f/9f/d9/9f9fd9da90a770931afe805c5dc39d67.jpg);
+    color: white;
+    background-size: cover;
+}
+
+body[data-template="engineering"] .preview-cnt-r h3 {
+    color: #ff6600;
+}
+
+/* Legal Template */
+body[data-template="legal"] .preview-cnt {
+    font-family: 'Times New Roman', serif;
+    background-color: #f5f5dc;
+    /* beige/cream */
+}
+
+body[data-template="legal"] .preview-cnt-l {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/51/d7/cc/51d7ccecb4e893c9c441ebccddc05114.jpg);
+    color: white;
+    background-size: cover;
+}
+
+body[data-template="legal"] .preview-cnt-r h3 {
+    color: #333333;
+}
+
+/* Marketing Template */
+body[data-template="marketing"] .preview-cnt {
+    font-family: 'Lato', sans-serif;
+    background-color: #fff0f6;
+}
+
+body[data-template="marketing"] .preview-cnt-l {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/35/cc/a9/35cca9bc4d3505f1ee7ff62f7c567a3a.jpg);
+    color: white;
+    background-size: cover;
+}
+
+body[data-template="marketing"] .preview-cnt-r h3 {
+    color: #c0392b;
+}
+
+/* Freelance Template */
+body[data-template="freelance"] .preview-cnt {
+    font-family: 'Nunito', sans-serif;
+    background-color: #e0f7fa;
+}
+
+body[data-template="freelance"] .preview-cnt-l {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/28/26/d3/2826d3721150750cff4cbf254e06d86d.jpg);
+    color: white;
+    background-size: cover;
+}
+
+body[data-template="freelance"] .preview-cnt-r h3 {
+    color: #00796b;
+}
+
+/* Hospitality Template */
+body[data-template="hospitality"] .preview-cnt {
+    font-family: 'Playfair Display', serif;
+    background-color: #fff8f0;
+}
+
+body[data-template="hospitality"] .preview-cnt-l {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/90/b8/1a/90b81ade6f19bd92c61a824fa6b81711.jpg);
+    color: white;
+    background-size: cover;
+}
+
+body[data-template="hospitality"] .preview-cnt-r h3 {
+    color: #8b5e3c;
+}
+
+/* Seafarer Template */
+body[data-template="seafarer"] .preview-cnt {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+}
+
+body[data-template="seafarer"] .preview-cnt-l {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/d5/46/2a/d5462a5e86e2ece8c9854c9598a27880.jpg);
+    color: white;
+    background-size: cover;
+}
+
+body[data-template="seafarer"] .preview-cnt-r h3 {
+    color: #003366;
+}
+
+/* Police Officer Template */
+body[data-template="police"] .preview-cnt {
+    font-family: 'PT Sans', sans-serif;
+    background-color: #d0e5ff;
+}
+
+body[data-template="police"] .preview-cnt-l {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/55/85/41/55854130192b08798224333e438458cd.jpg);
+    color: white;
+    background-size: cover;
+}
+
+body[data-template="police"] .preview-cnt-r h3 {
+    color: #1e3a8a;
 }
